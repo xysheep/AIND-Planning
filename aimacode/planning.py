@@ -51,7 +51,7 @@ class Action:
         for clause in self.precond_neg:
             if self.substitute(clause, args) in kb.clauses:
                 return False
-        return True
+        return True 
 
     def act(self, kb, args):
         """Executes the action on the state's kb"""

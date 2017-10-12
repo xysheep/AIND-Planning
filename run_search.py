@@ -103,8 +103,9 @@ def main(p_choices, s_choices):
 
 def show_solution(node, elapsed_time):
     print("Plan length: {}  Time elapsed in seconds: {}".format(len(node.solution()), elapsed_time))
-    for action in node.solution():
-        print("{}{}".format(action.name, action.args))
+    # for action in node.solution():
+    #     print("{}{}".format(action.name, action.args))
+    print('Best solution: ', len(node.solution()))
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description="Solve air cargo planning problems " + 
